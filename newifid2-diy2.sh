@@ -17,6 +17,7 @@
 # Modify default IP
 # sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
+mkdir -p files/etc/hotplug.d/block && curl -fsSL https://raw.githubusercontent.com/afala2020/openwrt-package/main/usb/10-mount > files/etc/hotplug.d/block/10-mount
 
 # 修改固件默认名称
 sed -i 's/OpenWrt/NEWIFI/g' package/base-files/files/bin/config_generate
