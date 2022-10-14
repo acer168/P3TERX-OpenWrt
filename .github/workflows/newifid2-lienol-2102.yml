@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: newifid2-lienol
+name: newifid2-lienol-2102
 
 on:
   repository_dispatch:
