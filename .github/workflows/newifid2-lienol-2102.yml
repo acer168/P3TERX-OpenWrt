@@ -22,7 +22,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: newifid2.config
+  CONFIG_FILE: newifid2-lienol-2102.config
   DIY_P1_SH: newifid2-diy1.sh
   DIY_P2_SH: newifid2-diy2.sh
   SSH_ACTIONS: false
