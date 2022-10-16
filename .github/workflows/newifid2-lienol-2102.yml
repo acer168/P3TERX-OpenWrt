@@ -66,12 +66,12 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
         
-    - name: 下载自定义插件1
-      run: cd openwrt && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-    - name: 下载自定义插件2
-      run: cd openwrt && git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-erverchan
-    - name: 下载自定义插件3
-      run: cd openwrt && git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
+    - name: 下载自定义插件
+      run: |
+        cd openwrt
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+        git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
+        git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
         
     - name: 更新插件
       run: cd openwrt && ./scripts/feeds update -a
